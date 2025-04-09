@@ -1,5 +1,4 @@
-// Hamburger toggle for mobile nav
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
 
@@ -7,19 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("active");
   });
 
-  // Contact form submission
   const form = document.getElementById("contactForm");
-  const messageBox = document.getElementById("formMessage");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    messageBox.classList.remove("hidden");
-    form.reset();
-  });
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your message!");
+      form.reset();
+    });
+  }
 });
-
-// Toggle details in project section
-function toggleDetails(button) {
-  const details = button.nextElementSibling;
-  details.classList.toggle("hidden");
-}
