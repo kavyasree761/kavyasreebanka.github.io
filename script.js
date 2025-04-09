@@ -1,17 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  const elements = document.querySelectorAll(".fade-in, .slide-in, .zoom-in");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = "running";
+      }
+    });
   });
 
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Thank you for your message!");
-      form.reset();
-    });
-  }
+  elements.forEach((el) => {
+    el.style.animationPlayState = "paused";
+    observer.observe(el);
+  });
+
+  // Toggle Menu
+  document.querySelector(".menu-toggle").addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.toggle("show");
+  });
+
+  // Sticky Navbar on scroll
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
 });
