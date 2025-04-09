@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+nav h1 {
+  display: inline;
+  margin-left: 20px;
+}
+.nav-links {
+  float: right;
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  background: #005c99;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #005c99;
+  border-radius: 5px;
+  text-decoration: none;
+}
+section {
+  padding: 40px 0;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+.project, .certification {
+  margin-bottom: 20px;
+}
+.details.hidden {
+  display: none;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  background: white;
+  margin: 5px;
+  width: 25px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
