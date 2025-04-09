@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kavya Sree Banka | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kavya Sree Banka | Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Kavya Sree Banka</h1>
-      <p>Data Analyst | SQL | Power BI | Python</p>
-      <div class="contact">
-        <a href="mailto:kavyasree9381@gmail.com">kavyasree9381@gmail.com</a> | 
-        <a href="https://www.linkedin.com/in/kavyasreebanka" target="_blank">LinkedIn</a>
-      </div>
+  <header class="header" id="home">
+    <div class="header-content">
+      <h1 class="header-title">
+        <span class="highlight">Hello, I'm</span><br />
+        Kavya Sree Banka
+      </h1>
+      <p class="header-subtitle">Driving data-powered decisions with impactful insights</p>
+      <a href="#about" class="btn">Explore My Work</a>
     </div>
   </header>
 
-  <!-- About Me -->
-  <section id="about" class="container">
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="#">Kavya</a></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      Results-driven Data Analyst with over 2 years of experience in SQL, Python, Power BI, and Excel.
-      Skilled in data modeling, ETL, and creating business intelligence solutions that improve performance metrics.
-      Certified in Power BI and Advanced SQL with a strong focus on data accuracy and cross-functional collaboration.
-    </p>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hello! I'm <strong>Kavya Sree Banka</strong>, a results-driven <strong>Data Analyst</strong> with 2+ years of experience in SQL, Python, and Power BI. I transform raw data into valuable insights and create interactive dashboards that inform business strategy. I'm pursuing my Master’s in Data Science at <strong>University of North Texas</strong>.</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+      </div>
+    </div>
   </section>
 
-  <!-- Technical Skills -->
-  <section id="skills" class="container">
+  <section id="skills">
     <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn), R</li>
-      <li><strong>Databases:</strong> SQL Server, MySQL, PostgreSQL</li>
-      <li><strong>Tools:</strong> Power BI, Tableau, Excel, Looker, Alteryx</li>
-      <li><strong>Other:</strong> ETL, DAX, SPSS, RapidMiner, Jupyter, Google Colab</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill"><p>Python</p></div>
+      <div class="skill"><p>SQL</p></div>
+      <div class="skill"><p>Power BI</p></div>
+      <div class="skill"><p>Tableau</p></div>
+      <div class="skill"><p>Excel (VBA, Pivot)</p></div>
+      <div class="skill"><p>R</p></div>
+      <div class="skill"><p>MySQL / PostgreSQL</p></div>
+      <div class="skill"><p>Jupyter / Colab</p></div>
+    </div>
   </section>
 
-  <!-- Professional Experience -->
-  <section id="experience" class="container">
+  <section id="experience">
     <h2>Professional Experience</h2>
-    <h3>HCL Technologies – Data Analyst</h3>
-    <p><em>Bangalore, India | Nov 2022 – May 2023</em></p>
-    <ul>
-      <li>Designed and maintained ETL pipelines to process large datasets into SQL databases.</li>
-      <li>Built Power BI/Tableau dashboards to improve stakeholder reporting.</li>
-      <li>Used SQL and Python to analyze operations, increasing efficiency by 15%.</li>
-    </ul>
-
-    <h3>Plus2Digital Technologies – Data Analyst Intern</h3>
-    <p><em>Hyderabad, India | Jun 2021 – Oct 2022</em></p>
-    <ul>
-      <li>Created automated Excel dashboards using VBA, reducing manual work by 30%.</li>
-      <li>Performed EDA using SQL and Python to influence business decisions.</li>
-      <li>Helped develop predictive models to improve sales forecasting by 12%.</li>
-    </ul>
+    <div class="experience-grid">
+      <div class="experience">
+        <h3>HCL Technologies</h3>
+        <p><b>Data Analyst</b> | Nov 2022 – May 2023</p>
+        <ul>
+          <li>Built ETL pipelines and dashboards using SQL and Power BI</li>
+          <li>Boosted reporting efficiency by 15% with data analysis in Python</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>Plus2Digital Technologies</h3>
+        <p><b>Data Analyst Intern</b> | Jun 2021 – Oct 2022</p>
+        <ul>
+          <li>Automated Excel reports using VBA, saving 30% effort</li>
+          <li>Created predictive models that improved sales accuracy by 12%</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <!-- Academic Projects -->
-  <section id="projects" class="container">
-    <h2>Academic Projects</h2>
-    <h3>Road Accident Analysis</h3>
-    <p>
-      Developed an Excel dashboard to visualize road accident data by trends such as road type, casualty severity, and vehicle types. 
-      Cleaned raw data and delivered actionable insights for safety improvements.
-    </p>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Road Accident Analysis</h3>
+        <p>Built an Excel dashboard analyzing road accident data trends like casualties, road type, and vehicle type to derive safety insights.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Education -->
-  <section id="education" class="container">
-    <h2>Education</h2>
-    <p><strong>University of North Texas</strong> — Master of Science in Data Science<br/>
-    <em>Aug 2023 – May 2025 | Denton, TX, US</em></p>
+  <section id="resume" class="resume-section">
+    <h2>My Resume</h2>
+    <p>Download my resume to explore my full journey, skills, and projects.</p>
+    <a href="KavyaSreeBanka_Analyst.pdf" class="btn" download>Download Resume</a>
   </section>
 
-  <!-- Certifications -->
-  <section id="certifications" class="container">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Microsoft Certified Power BI Data Analyst Associate</li>
-      <li>Advanced SQL (HackerRank)</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Kavya Sree Banka</p>
+  <footer class="footer" id="contact">
+    <div class="footer-content container">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:kavyasree9381@gmail.com">kavyasree9381@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kavyasreebanka" target="_blank">linkedin.com/in/kavyasreebanka</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Kavya Sree Banka. All Rights Reserved.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
