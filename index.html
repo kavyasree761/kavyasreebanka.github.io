@@ -1,59 +1,111 @@
 <!DOCTYPE html>
-<html lang="="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kavya Sree Banka | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Kavya Sree Banka</h1>
-    <p>Data Analyst | Software Developer | MS Data Science</p>
+  <header id="home">
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+      <div class="container">
+        <h1>Kavya Sree Banka</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
+    <div class="hero">
+      <div class="container">
+        <h2>Hello, I'm</h2>
+        <h1>Kavya Sree Banka</h1>
+        <p>Data Analyst | Software Developer | MS in Data Science</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+      </div>
+    </div>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Restaurant Sales Data Analysis</strong> – Analyzed food delivery service data using SQL to explore customer behavior, restaurant performance, and delivery metrics.<br><em>Skills:</em> MySQL · Data Analysis · Problem Solving</li>
-      <li><strong>Road Accident Analysis</strong> – Built an interactive Excel dashboard to reveal accident trends like casualty severity and road types after thorough data cleaning.<br><em>Skills:</em> Microsoft Excel · Pivot Tables</li>
-      <li><strong>Medicine Inventory Management System</strong> – ASP.NET Core MVC project developed for tracking medicines, deliveries, and user roles, built with Entity Framework and SQL Server.<br><em>Skills:</em> ASP.NET Core · SQL Server · MVC Architecture</li>
-      <li><strong>Heart Disease Prediction and Analysis</strong> – Used Python and Tableau to predict cardiovascular risks and highlight trends in health data.<br><em>Skills:</em> Python · Tableau · Data Analysis · Data Cleaning</li>
-      <li><strong>Image Captioning using CNN + LSTM</strong> – Trained a deep learning model combining CNN and LSTM to generate captions for images using the Flickr8k dataset.<br><em>Skills:</em> Python · Deep Learning · Machine Learning</li>
-      <li><strong>Medical Appointment DBMS</strong> – Built an appointment management system using Oracle SQL to streamline hospital operations and medical record tracking.<br><em>Skills:</em> Oracle SQL · Database Design · Data Modelling</li>
-      <li><strong>Zero Trust Architecture in Telecom</strong> – Designed a secure architecture using ZTA principles to enhance telecom infrastructure security.<br><em>Skills:</em> Cybersecurity · Network Security · Cloud Security</li>
-    </ul>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Data Analyst with experience in SQL, Python, Power BI, and Tableau. Currently pursuing an MS in Data Science at the University of North Texas. Passionate about data-driven solutions and software development.</p>
+    </div>
   </section>
 
-  <section id="certifications">
-    <h2>Licenses & Certifications</h2>
-    <ul>
-      <li><strong>SQL Advanced (HackerRank)</strong> – Credential ID: 2C0514FDDFA2<br><em>Skills:</em> MySQL · Problem Solving</li>
-      <li><strong>Agile Foundations (IIBA)</strong><br><em>Skills:</em> Agile Methodologies · Agile Project Management</li>
-      <li><strong>Microsoft Certified: Power BI Data Analyst Associate</strong> – Credential ID: 69CD2E45D5B49F85<br><em>Skills:</em> Power Query · Power BI</li>
-    </ul>
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill" onclick="alert('Skill: SQL')">
+          <img src="images/sql.png" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div class="skill" onclick="alert('Skill: Python')">
+          <img src="images/python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill" onclick="alert('Skill: Power BI')">
+          <img src="images/powerbi.png" alt="Power BI">
+          <p>Power BI</p>
+        </div>
+        <div class="skill" onclick="alert('Skill: Tableau')">
+          <img src="images/tableau.png" alt="Tableau">
+          <p>Tableau</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Restaurant Sales Data Analysis</h3>
+        <p>Analyzed food delivery service data using SQL to explore customer behavior, restaurant performance, and delivery metrics.</p>
+        <button onclick="toggleDetails(this)">More Details</button>
+        <div class="details hidden">
+          <p>Skills: MySQL · Data Analysis · Problem Solving</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="resume">
-    <h2>Resume</h2>
-    <a href="KavyaSreeBanka_Analyst.pdf" download>Download My Resume (PDF)</a>
+    <div class="container">
+      <h2>Resume</h2>
+      <a href="KavyaSreeBanka_Analyst.pdf" download class="btn">Download My Resume (PDF)</a>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kavyasree9381@gmail.com">kavyasree9381@gmail.com</a></p>
-    <p><a href="https://linkedin.com/in/kavyasreebanka" target="_blank">LinkedIn</a></p>
-    <p><a href="https://github.com/kavyasreebanka" target="_blank">GitHub</a></p>
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formMessage" class="hidden">Thank you for reaching out!</div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Kavya Sree Banka</p>
+    <div class="container">
+      <p>© 2025 Kavya Sree Banka</p>
+    </div>
   </footer>
 </body>
 </html>
