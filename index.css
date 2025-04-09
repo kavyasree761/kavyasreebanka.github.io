@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #fdfdfd;
+  background-color: #fff;
   color: #333;
 }
 
 header {
-  background-color: #4a90e2;
+  background-color: #005c99;
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -29,11 +29,15 @@ section {
 }
 
 h2 {
-  color: #4a90e2;
+  color: #005c99;
 }
 
 footer {
   text-align: center;
   padding: 10px;
   background-color: #eee;
+}
+
+a {
+  color: #005c99;
 }
