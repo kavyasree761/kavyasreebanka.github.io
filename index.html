@@ -11,8 +11,9 @@
   <header id="home">
     <nav>
       <div class="container">
-        <h1>Kavya Sree Banka</h1>
+        <div class="logo">Kavya Sree Banka</div>
         <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -21,73 +22,38 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
       </div>
     </nav>
-    <div class="hero">
-      <div class="container">
-        <h2>Hello, I'm</h2>
-        <h1>Kavya Sree Banka</h1>
-        <p>Data Analyst | Software Developer | MS in Data Science</p>
-        <a href="#projects" class="btn">Explore My Work</a>
-      </div>
+    <div class="hero-text">
+      <h1>Hello, I'm Kavya</h1>
+      <h2>Data Analyst | Software Developer | MS in Data Science</h2>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </header>
 
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a Data Analyst with experience in SQL, Python, Power BI, and Tableau. Currently pursuing an MS in Data Science at the University of North Texas. Passionate about data-driven solutions and software development.</p>
+      <p>I am a Data Analyst with expertise in SQL, Python, Power BI, Tableau, and Advanced Excel. I'm pursuing my Master of Science in Data Science at the University of North Texas, where I’ve worked on a variety of data-driven and machine learning projects. My passion lies in transforming raw data into meaningful insights.</p>
     </div>
   </section>
 
   <section id="skills">
     <div class="container">
-      <h2>Technical Skills</h2>
+      <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill" onclick="alert('Skill: Python')">
-          <img src="images/python.png" alt="Python">
-          <p>Python</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Tableau')">
-          <img src="images/Tableau.jpg" alt="Tableau">
-          <p>Tableau</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: MySQL')">
-          <img src="images/sql.png" alt="MySQL">
-          <p>MySQL</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Power BI')">
-          <img src="images/image_ff55d03003.png" alt="Power BI">
-          <p>Power BI</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Advanced Excel')">
-          <img src="images/Excel.jpg" alt="Advanced Excel">
-          <p>Advanced Excel</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: ETL')">
-          <img src="images/etl.png" alt="ETL">
-          <p>ETL</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Statistics')">
-          <img src="images/statistics.png" alt="Statistics">
-          <p>Statistics</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Microsoft Office')">
-          <img src="images/office.png" alt="Microsoft Office">
-          <p>Microsoft Office</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: RapidMiner')">
-          <img src="images/rapidminer.png" alt="RapidMiner">
-          <p>RapidMiner</p>
-        </div>
-        <div class="skill" onclick="alert('Skill: Git')">
-          <img src="images/git.png" alt="Git">
-          <p>Git</p>
-        </div>
+        <div class="skill"><img src="images/python.png" alt="Python"><p>Python</p></div>
+        <div class="skill"><img src="images/tableau.png" alt="Tableau"><p>Tableau</p></div>
+        <div class="skill"><img src="images/sql.png" alt="MySQL"><p>MySQL</p></div>
+        <div class="skill"><img src="images/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+        <div class="skill"><img src="images/excel.png" alt="Advanced Excel"><p>Advanced Excel</p></div>
+        <div class="skill"><img src="images/etl.png" alt="ETL"><p>ETL</p></div>
+        <div class="skill"><img src="images/statistics.png" alt="Statistics"><p>Statistics</p></div>
+        <div class="skill"><img src="images/office.png" alt="Microsoft Office"><p>Microsoft Office</p></div>
+        <div class="skill"><img src="images/rapidminer.png" alt="RapidMiner"><p>RapidMiner</p></div>
+        <div class="skill"><img src="images/git.png" alt="Git"><p>Git</p></div>
       </div>
     </div>
   </section>
@@ -97,19 +63,38 @@
       <h2>Projects</h2>
       <div class="project">
         <h3>Restaurant Sales Data Analysis</h3>
-        <p>Analyzed food delivery service data using SQL to explore customer behavior, restaurant performance, and delivery metrics.</p>
-        <button onclick="toggleDetails(this)">More Details</button>
-        <div class="details hidden">
-          <p>Skills: MySQL · Data Analysis · Problem Solving</p>
-        </div>
+        <p>Analyzed restaurant delivery data with SQL to uncover patterns in customer behavior, order trends, and performance metrics.</p>
       </div>
+      <div class="project">
+        <h3>Road Accident Analysis</h3>
+        <p>Built an Excel dashboard with pivot tables and filters to visualize accident data trends like severity, road types, and more.</p>
+      </div>
+      <div class="project">
+        <h3>Medicine Inventory Management System</h3>
+        <p>ASP.NET Core MVC project for tracking medicine inventory, deliveries, and users. Used SQL Server and Entity Framework.</p>
+      </div>
+      <div class="project">
+        <h3>Heart Disease Prediction</h3>
+        <p>Used Python and Tableau to analyze health data and predict cardiovascular risks. Data cleaning and visualization performed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>SQL Advanced – HackerRank</li>
+        <li>Agile Foundations – IIBA</li>
+        <li>Microsoft Certified: Power BI Data Analyst Associate</li>
+      </ul>
     </div>
   </section>
 
   <section id="resume">
     <div class="container">
       <h2>Resume</h2>
-      <a href="KavyaSreeBanka_Analyst.pdf" download class="btn">Download My Resume (PDF)</a>
+      <a href="KavyaSreeBanka_Analyst.pdf" class="btn" download>Download My Resume</a>
     </div>
   </section>
 
@@ -120,15 +105,17 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Send</button>
       </form>
-      <div id="formMessage" class="hidden">Thank you for reaching out!</div>
+      <p>Email: <a href="mailto:kavyasree9381@gmail.com">kavyasree9381@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/kavyasreebanka" target="_blank">linkedin.com/in/kavyasreebanka</a></p>
+      <p>GitHub: <a href="https://github.com/kavyasreebanka" target="_blank">github.com/kavyasreebanka</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Kavya Sree Banka</p>
+      <p>© 2025 Kavya Sree Banka. All rights reserved.</p>
     </div>
   </footer>
 </body>
